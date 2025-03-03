@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+    <main class="container">
+      
+        <header>
+            <div class="inpSearch">
+                <form action="#" class="formSearch">
+                    <input type="text" name="Search" class="input" placeholder="...Search">
+                </form>
+                <button class="button-6">
+                    <span class="icon">+</span>
+                    <span>Добавить</span>
+                </button>
+            </div>
+            
+        </header>
+        <section>
+            <div class="main">
+                <div class="id">
+                    <p><i class="fa fa-user"></i> </p>
+                    <h4>ID</h4>
+                  </div>
+                <div class="name">
+                  <p><i class="fa fa-user"></i> </p>
+                  <h4>User</h4>
+                </div>
+                <div class="city">
+                  <p><i class="fa fa-lock"></i></p>
+                  <h4>Role</h4>
+                </div>
+                <div class="status">
+                  <p><i class="fa fa-clock-o"></i></p>
+                  <h4>Status</h4>
+                </div>
+                <div class="phone">
+                  <p><i class="fa fa-phone"></i></p>
+                  <h4>Edit</h4>
+                </div>
+              </div>
+              <div class="table-users-info">
+                <div class="users-info">
+                    <div class="user-id">
+                    <p>1</p>
+                    </div>
+                    <div class="user-txt">
+                    <span>Ismoil@gmail.com</span>
+                    </div>
+                    <div class="user-city"><p>Query</p></div>
+                    <div class="user-status"><p aria-valuetext="invited">active</p></div>
+                    <div class="icons">
+                      <div class="us-chck">
+                        <button class="faq-button">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                              d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                            ></path>
+                          </svg>
+                          <span class="tooltip"></span>
+                        </button>
+                        
+                      </div>
+                      <div class="us-title">
+                        <label class="ui-bookmark">
+                        <input type="checkbox">
+                        <div class="bookmark">
+                          <svg viewBox="0 0 32 32">
+                            <g>
+                              <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                            </g>
+                          </svg>
+                        </div>
+                      </label>
+                    </div>
+                      
+                      <div class="us-edit"><i class="fa fa-pencil"></i></div>
+                      <div class="us-del"><i class="fa fa-trash-o"></i></div>
+                    </div>
+
+                    </div>
+              </div>
+        </section>
+    </main>
+    <div class="dark-mode">
+      <label class="toggle" for="switch">
+          <input id="switch" class="input-dark-mode" type="checkbox">
+          <div class="icon icon--moon">
+              <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="
+              fill: #4d4d4d;">
+                  <path clip-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" fill-rule="evenodd"></path>
+              </svg>
+          </div>
+      
+          <div class="icon icon--sun">
+              <svg height="32" width="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+              </svg>
+          </div>
+      </label>
+    </div>
+    <dialog  class="add">
+      <form class="form">
+        <div class="form-title">Welcome</div>
+        <i class="fa fa-close" onclick="closeModal()"></i>
+        <div class="form-subtitle">Let's create your account!</div>
+        <div class="form-input-container ic1">
+          <input name="firstname" class="form-input add-name" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="firstname" class="form-placeholder">First name</label>
+        </div>
+        <div class="form-input-container ic2">
+          <input name="lastname" class="form-input add-lastName" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="lastname" class="form-placeholder">Status</label>
+        </div>
+        <div class="form-input-container ic2">
+          <input name="email" class="form-input add-email" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="email" class="form-placeholder">Email</label>
+        </div>
+        <button type="text" class="submit">submit</button>
+      </form>
+    </dialog>
+
+    <dialog class="Edit">
+      <div class="form">
+        <div class="form-title">Edit</div>
+        <i class="fa fa-close" onclick="closeModal()"></i>
+        <div class="form-subtitle">Let's edit your account!</div>
+        <div class="form-input-container ic1">
+          <input name="idit-name" class="form-input edit-name" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="firstname" class="form-placeholder">First name</label>
+        </div>
+        <div class="form-input-container ic2">
+          <input name="edit-lastname" class="form-input edit-lastname" type="text" placeholder=" " />
+          <div class="cut"></div>
+          <label for="lastname" class="form-placeholder">Status</label>
+        </div>
+        <div class="form-input-container ic2">
+          <input name="edit-email" class="form-input edit-email" type="text" placeholder=" " />
+          <div class="cut cut-short"></div>
+          <label for="email" class="form-placeholder">Email</label>
+        </div>
+        <button type="text" class="submit edit-submit">submit</button>
+      </div>
+    </dialog>
+<script src="main.js"></script>
+</body>
+</html>
